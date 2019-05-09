@@ -1,0 +1,207 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+%Packages and stuff
+\usepackage{fullpage}
+\usepackage{titlesec}
+\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.1in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-1pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Parker King-Fournier}  & (514) 709-5393\\
+22 Avenue Fairmount Ouest  &  parker.k.fournier "at" gmail.com \\
+Montreal, QC H2T 2M1 & \textit{github.com/parkerking-fournier}\\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\section*{Education}
+\begin{itemize}
+\item
+	\ressubheading{McGill University}{Montreal, QC}{B.Sc., Computer Science \& Biology}{Sep. 2013 - Aug. 2018}
+	\begin{itemize}
+		\resitem{Relevant courses: Discrete Mathematics, Linear Algebra, Probability Theory, Statistics, Software Systems, Algorithms and Data Structures, Artificial Intelligence, Computational Biology Methods, Applied Machine Learning, Computer Graphics, Independent Research Project in Machine Learning and Ecology}
+	\end{itemize}
+
+\item
+	\ressubheading{McGill University}{Montreal, QC}{B.Mus., Trumpet}{Sep. 2013 - May 2018}
+	\begin{itemize}
+		\resitem{Relevant courses: Music and Audio Computing 1 \& 2}
+		\resitem{Studied under the tutelage of Andrew Dunn (Trinity Laban Conservatoire of Music and Dance), Chris Smith (Orchestre symphonique de Montr\'eal) and Russel DeVuyst (Orchestre symphonique de Montr\'eal)}
+	\end{itemize}
+	
+\end{itemize}
+
+\section*{Work Experience}
+\begin{itemize}
+\item
+	\ressubheading{Mobeewave}{Montreal, QC}{Embedded Systems Payment Application Developer}{Oct 2018 - Ongoing}
+	\begin{itemize}
+		\resitem{Developed Java Card applets for the Secure Element of smartphones, focusing mainly on code optimization. Created testing applications for Android and Kai operating systems. Automated QA testing.}
+	\end{itemize}
+	
+\item
+	\ressubheading{McGill University Tutoring Services}{Montreal, QC}{Personal Math, Computer Science, Biology and Music tutor}{Sept 2017 - Ongoing}
+	\begin{itemize}
+		\resitem{Work one on one with undergraduate students to help them grasp core concepts taught in various programs. Disciplines include Mathematics, Computer Science, Biology, Ecology and Music. Responsibilities include designing practice exams and problem sets that address the specific weaknesses of each student.}
+	\end{itemize}
+	
+\item
+	\ressubheading{Independent Contract}{Montreal, QC}{Ice Climbing Instructor and Guide}{Jan. 2017 - March. 2017}
+	\begin{itemize}
+		\resitem{Instructed the proper techniques for climbing waterfall ice and the construction of safe anchors. Coordinated food, shelter and accommodations for multi-day group courses.}
+	\end{itemize}
+
+\item 
+	\ressubheading{Appalachian Mountain Club August Camp}{Seattle, WA}{Crew Member}{July 2015 - Aug. 2018}
+	\begin{itemize}
+		\resitem{Provided food and lodging in the back-country. Responsibilities included making food orders, designing menus, building camp facilities, interacting with local suppliers, managing grey water, cooking meals, and interacting with customers while living in a rural setting.}
+	\end{itemize}
+
+\item
+	\ressubheading{Schulich School of Music}{Montreal, QC}{Student Ambassador}{Sep. 2017 - May. 2018}
+	\begin{itemize}
+		\resitem{Represented the school to prospective students by giving tours, coordinating recruitment events, creating online content and personally advising students interested in pursuing non-traditional educational paths.}
+	\end{itemize}
+
+\item
+	\ressubheading{Northern Star Council Base Camp}{St. Paul, MN}{Outdoor Leadership and Team Building Guide}{May 2014 - Aug. 2017}
+	\begin{itemize}
+		\resitem{Taught team building, archery, rock climbing and led outdoor development programs to children from the ages of 5 to 18 as well as adults with disabilities. Responsibilities included designing curricula tailored to each participants' needs, as well as assuming responsibility for large groups of children for extended periods of time.}
+	\end{itemize}
+
+\end{itemize}
+
+\section*{Projects}
+\begin{itemize}
+\item
+	\ressubheading{3D Rendering of the King-Fournier Attractor}{Montreal, QC}{Independent}{May 2018 - Aug. 2018}
+	\begin{itemize}
+		\resitem{Extended pre-existing libraries to visualize a chaotic attractor that was discovered in my studies of population dynamics.}
+	\end{itemize}
+
+\item
+	\ressubheading{Inferring Network Topology from Chaotic Time Series}{Montreal, QC}{Supervised by Frederic Guichard (McGill University)}{May 2018 - Aug. 2018}
+	\begin{itemize}
+		\resitem{Created multiple data sets used for training machine learning algorithms.}
+		\resitem{Designed and tested machine learning architectures for the tasks of regression and classification of the food web topology that generated a given population time series.}
+		\resitem{In the process of publication as machine learning is new in the field of ecology.}
+	\end{itemize}
+	
+\item
+	\ressubheading{Real Time Signal Harmonizer}{Montreal, QC}{Independent}{Jan 2018 - April. 2018}
+	\begin{itemize}
+		\resitem{Implemented a GUI to harmonize an input signal in real time using Pure Data. This patch allows the quality of chord (major, minor, etc.) and octave to be chosen by the user. These parameters are used to transform an input signal into specific harmonies in real time.}
+	\end{itemize}	
+	
+\item
+	\ressubheading{Ray Tracer}{Montreal, QC}{Independent}{Jan 2018 - March. 2018}
+	\begin{itemize}
+		\resitem{Implemented a multitude of Ray Tracing functions such as object intersection, shadows, reflections, refractions, Fresnel equations, shading, procedural pattern generating, pattern mapping, etc.}
+	\end{itemize}
+	
+\item
+	\ressubheading{Reproducability Study of ICLR 2018 Submissions}{Montreal, QC}{Supervised by Joelle Pineau (McGill University)}{November 2017 - Dec. 2017}
+	\begin{itemize}
+		\resitem{Attempted to reproduce the experiment detailed in the paper "Do Convolutional Neural Networks act as Compositional Nearest Neighbors?" as part of a reproducability study for ICLR 2018 headed by Joelle Pineau.}
+	\end{itemize}	
+	
+\item
+	\ressubheading{Das Bohnenspiel Artificial Intelligence Algorithm}{Montreal, QC}{Supervised by Jackie Cheung (McGill University)}{Sep. 2016 - Dec. 2017}
+	\begin{itemize}
+		\resitem{Implementation of the Principal Variation Search algorithm as applied to the Mankala-like game Das Bohnenspiel. The algorithm was tested against random players, bots, and humans.}
+	\end{itemize}
+	
+\item
+	\ressubheading{Voice to R2-D2 Sound Synthesizer}{Montreal, QC}{Supervised by Gary Scavone (McGill University)}{Jan 2016 - April. 2016}
+	\begin{itemize}
+		\resitem{Developed an application utilizing programs implemented in Matlab and Max/MSP which would take input .wav files and play a random string of R2-D2 sounds that were mapped to pitches in the input file.}
+	\end{itemize}
+
+\end{itemize}
+
+\section*{Awards}
+	\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		Friends of Music Award (\$1,500) & 2017\\
+		Student of the Year in Music & 2013\\
+		National Council of English Teachers Writing Award & 2013\\
+\end{tabular*}
+
+\section*{Skills}
+
+\begin{description}
+\item[Languages:]
+English (first language), French (intermediate spoken and written)
+
+\item[Programming Languages:]
+Bash, C, C++, Java, Java Card, Javascript, Python, Perl, Matlab, R, \LaTeX, Max/MSP, Pure Data, PHP, HTML
+
+\item[Libraries:]
+Tensorflow, PyTorch, EchoTorch, NumPy, Matplotlib, OpenGL, GLSL, JSON, Swing (Java)
+
+\item[Applications:]
+Mathematica, MatLab, \LaTeX, Microsoft Office Suite, Android Studio, Max/MSP, Eclipse, NetBeans, Visual Studio, Meshlab, Pure Data, Graph Tea
+
+\item[Operating Systems:]
+MacOS, Linux (Ubuntu), UNIX
+
+\item[Lab Skills:]
+Data Visualization, Signal Processing, Arduino UNO circuit building and software implementation, formal training in methods relevant to biology labs (Polymerase Chain Reaction, gel electrophoresis, protein isolation, use of restriction enzymes, western, northern and southern blots, DNA/RNA extraction, etc.)
+
+\item[Miscellaneous:]
+strong ability to self-teach, strong debugging abilities, algorithmic intuition, strong verbal and written communication skills, exceptional problem solving skills, excel in team environments, self-motivated and curious, self-reliant, highly adaptable
+\end{description}
+
+\section*{Interests}
+
+\begin{description}
+\item[Academic:] Chaos theory, mathematics in music and biology, fractal geometries, ecology, computer graphics, dynamical systems, quantum theory and computation, discrete mathematics, machine learning, artificial intelligence
+
+\item[Sports:] Rock climbing, swimming, soccer, skateboarding, snowboarding
+
+\item[Musical:] Classical \& jazz trumpet, singing, piano 
+
+\item[Other:] Cooking \& baking, camping, hiking, animal care, child care
+\end{description}
+
+\end{document}
